@@ -1,0 +1,52 @@
+/** components_ext.css **/
+
+/* main view */
+.compdiv td.comp-edit a, .compdiv td.comp-edit a:visited, .compdiv td.comp-active a, .compdiv td.comp-active a:visited { color: #999 !important; text-decoration: none !important; padding: 2px 3px; display: block; line-height: 14px; font-size: 10px; text-transform: uppercase; font-weight: bold !important; transition: all .02s ease-in-out; font-style: normal; }
+.compdiv { overflow: hidden; height: 22px; margin: 0; border-bottom: 1px solid #eee; padding: 6px 0 2px; transition: all .1s ease-in-out; }
+.compdiv.expanded { height: auto; }
+.compdiv textarea { display: none; visibility: hidden; resize: vertical; }
+.compdiv.expanded textarea { width: 100%; box-sizing: border-box; height: 200px; display: inline-block; visibility: visible; }
+.compdiv td.comp-edit a:hover, .compdiv td.comp-edit.active a { text-shadow: 1px 1px 0px rgba(0,0,0,0.2); background: #182227 !important; color: #ccc !important; text-decoration: none !important; display: block; font-weight: normal; }
+.compdiv .btn-delete, .compdiv .btn-edit, .compdiv .btn-active { background: #f6f6f6; }
+.compdiv p.submit_line { text-align: right; padding-top: 10px; }
+.compdiv .button, .compdiv input, .compdiv textarea, #component-search input { outline: none; }
+.compdiv .comp-snippet { text-align: right; }
+.compdiv table.comptable { width: 100%; }
+.compdiv table td input.text, #component-search input { padding: 3px 5px; }
+.compdiv td.comp-edit, .compdiv td.comp-active { width: 20px; padding-right: 5px;}
+.compdiv a.btn-edit, .compdiv a.btn-active { text-align: center; font-size: 18px; border-radius: 3px; }
+.compdiv .editcomp { display: none; }
+.compdiv .editcomp label { display: inline-block; margin-right: 10px; box-sizing: border-box;}
+.compdiv.expanded .editcomp { display: table-cell; padding-bottom: 10px;}
+.editcomp input { padding: 3px 5px; }
+.editcomp input, .compdiv textarea { border-radius: 3px; }
+.editcomp .comptitle { margin-right: 10px; }
+.compdiv.expanded .comp-title, .compdiv.expanded .comp-snippet { display: none; }
+form.manyinputs input.text { width: 200px; }
+
+/* notifications */
+.updated { opacity: 1; transition: .5s opacity;}
+.updated.hiding { opacity: 0; }
+.error, .updated, .notify { position: fixed; top: 10px; width: 690px; box-sizing: border-box; z-index: 1000; }
+.error .close-btn, .updated .close-btn, .notify .close-btn { float: right; margin-right: 5px; font-size: 16px; }
+
+/* sidebar component search */
+#component-search { margin-bottom: 10px; position: relative; z-index: 99;}
+#component-search i { transform: rotate(45deg); font: bold 18px sans-serif; position: absolute; margin-left: 6px; }
+#component-search input { width: 100%; box-sizing: border-box; padding-left: 20px; }
+#component-search-list { display: block; position: absolute; z-index: 2000; background: white; width: 100%; box-sizing: border-box; border: 1px solid #999; border-top: none; border-bottom-left-radius: 3px; border-bottom-right-radius: 3px; }
+#component-search-list div { border-top: 1px solid #ccc; padding: 3px; cursor: pointer; }
+#component-search-list div:first-child { border-top: none; padding: 3px; }
+#component-search-list div:hover, #component-search-list div:active { background: #eee; }
+
+/* edit-nav component sort */
+#component-sort { overflow: hidden; position: relative; }
+#component-sort select { width: 100%; position: absolute; top: 0px; left: 0px; margin-right: -7px; border-bottom-right-radius: 3px; border-top-right-radius: 3px; font-size: 1.375em; margin-top: auto; height: 1.5em; border: medium none; background: none repeat scroll 0% 0% transparent; outline: medium none; opacity: 0; cursor: pointer; text-transform: none; cursor: default; border: initial; }
+
+/* fullscreen editing */
+.compdiv.expanded textarea.compval.expanded { position: fixed; width: 100% !important; height: 100% !important; top: 0; left: 0; z-index: 3000; }
+
+/* CodeMirror */
+.CodeMirror { height: auto; overflow: auto; overflow-x: hidden; max-height: 250px; margin-top: 10px; }
+.CodeMirror-scroll { height: auto; min-height: 24px; }
+.expanded .CodeMirror { margin-top: auto; border-radius: 3px; }

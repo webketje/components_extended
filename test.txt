@@ -1,0 +1,4 @@
+This file lists some manual tests to perform upon updating the plugin
+
+- Check CSS styling accuracy both in GS 3.3.x & GS 3.4+
+- Check folder permissions of the created folder at /data/components

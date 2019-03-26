@@ -1,0 +1,13 @@
+<FilesMatch "\.(css|js)$">
+	<IfModule !mod_authz_core.c>
+		Allow from all
+	</IfModule>
+	<IfModule mod_access_compat.c>
+		Allow from all
+	</IfModule>
+	<IfModule mod_authz_core.c>
+		<IfModule !mod_access_compat.c>
+			Require all granted
+		</IfModule>
+	</IfModule>	
+</FilesMatch>
