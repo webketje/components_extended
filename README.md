@@ -37,8 +37,8 @@ Changelog
 <pre><code>
 2019-03-28 - v0.9.3  
 - Removed spellcheck from component edits  
-- Fixed another permissions bug (hopefully)  
-- Fixed CSS change in GS 3.4  
+- Fixed another permissions bug 
+- Fixed compatibility issues with GS 3.4  
 - Added loading plugin on clicking the main GS 3.4 navigation  
 - Removed outdated CSS vendor prefixes  
 - Updated some metadata (version, website)  

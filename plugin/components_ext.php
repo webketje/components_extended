@@ -4,7 +4,7 @@
  * Plugin Name : Components Extended
  * Description : Augmented functionality for cleaner and more powerful GS components.
  * Version     : 0.9.3
- * Release date: 2019-03-22
+ * Release date: 2019-04-08
  * Author      : Kevin Van Lierde
  * Author URI  : https://webketje.com
  * License     : The MIT License (MIT)
