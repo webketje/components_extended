@@ -35,7 +35,7 @@ Screenshot
 Changelog
 =========
 <pre><code>
-2019-03-28 - v0.9.3  
+2019-04-08 - v0.9.3  
 - Removed spellcheck from component edits  
 - Fixed another permissions bug 
 - Fixed compatibility issues with GS 3.4  
