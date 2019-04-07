@@ -108,8 +108,10 @@ $count = 0;
 			</form>
 		</div>
 	</script>
-	<script>
-	  GS.i18n = {
+	<script>(function(i18n) {
+		i18n = i18n || {};
+
+		var labels = {
 	    cancelUpdates: '<?php i18n('components_ext/MSG_CANCEL_UPDATES'); ?>',
 	    noSlugOrTitle: '<?php i18n('components_ext/MSG_NO_SLUG_TITLE'); ?>',
 	    comp_created : '<?php i18n('components_ext/MSG_COMP_CREATED');  ?>',
@@ -118,5 +120,16 @@ $count = 0;
 	    existing_slug: '<?php i18n('components_ext/MSG_EXISTING_SLUG'); ?>',
 	    delete_component: '<?php i18n('DELETE_COMPONENT'); ?>',
 	    error        : '<?php i18n('ERROR'); ?>',
-	  };
+		};
+
+		for (var l in labels) {
+			i18n[l] = labels[l];
+		}
+	}(GS.i18n));
 	</script>
+	<?php if (version_compare(GSVERSION, '3.4', '>=')) { ?>
+    <style>
+			.error { background-color: rgb(245, 225, 225); }
+			.updated { background-color: #FFFBCC; }
+		</style>
+	<?php } ?>

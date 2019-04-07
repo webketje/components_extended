@@ -28,7 +28,7 @@ form.manyinputs input.text { width: 200px; }
 .updated { opacity: 1; transition: .5s opacity;}
 .updated.hiding { opacity: 0; }
 .error, .updated, .notify { position: fixed; top: 10px; width: 690px; box-sizing: border-box; z-index: 1000; }
-.error .close-btn, .updated .close-btn, .notify .close-btn { float: right; margin-right: 5px; font-size: 16px; }
+.error .close-btn, .updated .close-btn, .notify .close-btn { float: right; margin-right: 5px; font-size: 16px; text-decoration: none; }
 
 /* sidebar component search */
 #component-search { margin-bottom: 10px; position: relative; z-index: 99;}

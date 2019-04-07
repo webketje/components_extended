@@ -27,7 +27,8 @@
     notif.innerHTML = msg;
     close.href = 'javascript:void(0)';
     close.innerHTML = '&times;';
-    close.className = 'close-btn';
+		close.className = 'close-btn';
+		close.style.textDecoration = 'none';
     close.onclick = function() { clearTimeout(notifTimer); this.parentNode.parentNode.removeChild(this.parentNode); }
     notif.appendChild(close);
 	  ref.parentNode.insertBefore(notif, ref);

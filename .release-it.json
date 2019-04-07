@@ -1,0 +1,16 @@
+{
+  "use": "git.tag",
+  "git": {
+    "requireCleanWorkingDir": false,
+    "commit": true,
+    "commitMessage": "Components Extended ${version}",
+    "tagName": "${version}",
+    "tagAnnotation": "Components Extended ${version}",
+    "tagArgs": "-s"
+  },
+  "github": {
+    "release": true,
+    "releaseName": "Components Extended ${version}",
+    "assets": ["components_extended_${version}.zip"]
+  }
+}
