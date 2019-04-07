@@ -5,7 +5,7 @@ git archive --format zip -o "components_extended_${version}.zip" -4 master
 
 read -p "Create github release? (y/n)" release
 
-if [ release = "y"]
+if [ release = "y" ]
   then
     exec release-it
 fi
